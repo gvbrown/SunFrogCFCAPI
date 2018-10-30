@@ -16,8 +16,8 @@
 	mockupGroupid = 0; 
 	color = 20; 
 	mockupType = 8; 
-	imageFile = 'https://s3.amazonaws.com/images.zerozine.com/public/BENZIE+MUSCLE+FARM-01.png';
-	aiFile = 'https://s3.amazonaws.com/images.zerozine.com/public/BENZIE+MUSCLE+FARM-01.png'; 
+	imageFile = 'https://api.sunfrogshirts.com/sunfrogshirt.jpg';
+	aiFile = 'https://api.sunfrogshirts.com/sunfroglogo.png'; 
 	imageFileBack = ''; 
 	aiFileBack = '';  
 
@@ -33,7 +33,7 @@
 
 	// send the mockup object to the API for processing (uses /mockups/addMockup endpoint )
 	mockupCreateResponse = sfapi.createMockup(mockupObj);
-
+	writeDump(mockupCreateResponse); 
 	/* 
 		** Create Mockup Response ** 
 
@@ -57,8 +57,8 @@
 	mockupGroupid = mockupCreateResponse[1]['group'];; 
 	color = 'red'; 
 	mockupType = 8; 
-	imageFile = 'https://s3.amazonaws.com/images.zerozine.com/public/BENZIE+MUSCLE+FARM-01.png';
-	aiFile = 'https://s3.amazonaws.com/images.zerozine.com/public/BENZIE+MUSCLE+FARM-01.png'; 
+	imageFile = 'https://api.sunfrogshirts.com/sunfrogshirt.jpg';
+	aiFile = 'https://api.sunfrogshirts.com/sunfroglogo.png'; 
 	imageFileBack = ''; 
 	aiFileBack = '';  
 
